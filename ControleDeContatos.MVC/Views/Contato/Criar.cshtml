@@ -1,0 +1,43 @@
+﻿@model ControleDeContatos.MVC.ViewModels.ContatoViewModel
+
+@{
+	ViewBag.Title = "Criar Contato";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+	<div class="card p-4 shadow-lg" style="width: 900px;">
+		<div class="text-center mb-4">
+			<h1>Cadastrar Contato</h1>
+
+
+		@using (Html.BeginForm("Criar", "Contato", FormMethod.Post))
+
+		{
+			<div class="mb-3">
+				<label for="nome" class="form-label">Nome</label>
+				@Html.TextBoxFor(x => x.Nome, new { @class = "form-control col-12", placeholder = "Digite seu contato", required = "true" })
+				@Html.ValidationMessageFor(x => x.Nome, "", new { @class = "text-danger" })
+			</div>
+
+			<div class="mb-3">
+				<label for="email" class="form-label">Email</label>
+				@Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Digite o e-mail do contato", type = "email" })
+				@Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+			</div>
+
+			<div class="mb-3">
+				<label for="celular" class="form-label">Celular</label>
+				@Html.TextBoxFor(x => x.Celular, new { @class = "form-control", placeholder = "Digite o celular do contato" })
+				@Html.ValidationMessageFor(x => x.Celular, "", new { @class = "text-danger" })
+			</div>
+
+			<div class="mt-5">
+				<button type="submit" class="btn btn-primary col-12 mb-3">Adicionar</button>
+
+				@Html.ActionLink("Voltar", "Index", "Contato", null, new { @class = "btn btn-secondary col-12" })
+			</div>
+
+		}
+		</div>
+	</div>
+</div>

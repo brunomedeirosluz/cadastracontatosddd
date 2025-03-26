@@ -1,0 +1,6 @@
+C:\Projetos\ControleDeContatos\ControleDeContatos.Domain\bin\Debug\ControleDeContatos.Domain.dll
+C:\Projetos\ControleDeContatos\ControleDeContatos.Domain\bin\Debug\ControleDeContatos.Domain.pdb
+C:\Projetos\ControleDeContatos\ControleDeContatos.Domain\obj\Debug\ControleDeContatos.Domain.csproj.AssemblyReference.cache
+C:\Projetos\ControleDeContatos\ControleDeContatos.Domain\obj\Debug\ControleDeContatos.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleDeContatos\ControleDeContatos.Domain\obj\Debug\ControleDeContatos.Domain.dll
+C:\Projetos\ControleDeContatos\ControleDeContatos.Domain\obj\Debug\ControleDeContatos.Domain.pdb

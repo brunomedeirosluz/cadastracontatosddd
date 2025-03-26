@@ -1,0 +1,17 @@
+﻿@model ControleDeContatos.MVC.ViewModels.ContatoViewModel
+@{
+    ViewBag.Title = "Apagar Contato";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+	<div class="card p-4 shadow-lg" style="width: 900px;">
+		<div class="text-center mb-4">
+			<h3>Realmente deseja apagar o contato (@Model.Nome)?</h3>
+		</div>
+
+		<div class="d-grid gap-2">
+			@Html.ActionLink("Cancelar Exclusão", "Index", "Contato", null, new { @class = "btn btn-primary col-12 mb-3" })
+			@Html.ActionLink("Confirmar Exclusão", "Apagar", "Contato", new { id = Model.Id }, new { @class = "btn btn-danger col-12" })
+		</div>
+	</div>
+</div>

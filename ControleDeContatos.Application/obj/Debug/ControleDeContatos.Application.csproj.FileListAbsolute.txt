@@ -1,0 +1,9 @@
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\bin\Debug\ControleDeContatos.Application.dll
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\bin\Debug\ControleDeContatos.Application.pdb
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\bin\Debug\ControleDeContatos.Domain.dll
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\bin\Debug\ControleDeContatos.Domain.pdb
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\obj\Debug\ControleDeContatos.Application.csproj.AssemblyReference.cache
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\obj\Debug\ControleDeContatos.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\obj\Debug\Controle.DFCEA065.Up2Date
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\obj\Debug\ControleDeContatos.Application.dll
+C:\Projetos\ControleDeContatos\ControleDeContatos.Application\obj\Debug\ControleDeContatos.Application.pdb

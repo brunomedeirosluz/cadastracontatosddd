@@ -1,0 +1,65 @@
+﻿@using ControleDeContatos.MVC.ViewModels
+@model IEnumerable<ControleDeContatos.MVC.ViewModels.ContatoViewModel>
+@{
+	ViewBag.Title = "Criar Contato";
+}
+<div class="text-center">
+	<div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4">
+		@Html.ActionLink("Adicionar novo contato", "Criar", "Contato", null, new { @class = "btn btn-primary" })
+	</div>
+    
+	@{ 
+		var mensagemSucesso = TempData["MensagemSucesso"] as string; 
+		var mensagemErro = TempData["MensagemErro"] as string; 
+	}
+
+	@if (!string.IsNullOrEmpty(mensagemSucesso))
+	{
+		<div class="alert alert-success" role="alert">
+			<button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+			@mensagemSucesso
+		</div>
+	}
+
+	@if (!string.IsNullOrEmpty(mensagemErro))
+	{
+		<div class="alert alert-danger" role="alert">
+			<button type="button" class="btn btn-danger btn-sm close-alert" aria-label="Close">X</button>
+			@mensagemErro
+		</div>
+	}
+
+	<h1 class="mt-4 mb-4" >Listagem de contatos</h1>
+
+	<table class="table">
+		<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Nome</th>
+			<th scope="col">E-mail</th>
+			<th scope="col">Celular</th>
+			<th></th>
+		</tr>
+		</thead>
+		<tbody>
+		@if (Model != null && Model.Any())
+		{
+			foreach (ContatoViewModel contato in Model)
+			{
+				<tr>
+					<th scope="row">@contato.Id</th>
+					<td>@contato.Nome</td>
+					<td>@contato.Email</td>
+					<td>@contato.Celular</td>
+					<td>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							@Html.ActionLink("Editar", "Editar", "Contato", new { id = contato.Id }, new { @class = "btn btn-primary" })
+							@Html.ActionLink("Apagar", "ApagarConfirmacao", "Contato", new { id = contato.Id }, new { @class = "btn btn-danger" })
+						</div>
+					</td>
+				</tr>
+			}
+		}
+		</tbody>
+	</table>
+</div>
